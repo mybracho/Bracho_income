@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b1271110-1f81-41df-afe7-d2287c8730c5">
+  <producedTypes>
+    <objectType typeId="39404f10-731c-4bfc-a88a-920ca333a8e5" valueTypeId="08032445-967a-457c-9cfa-6dea41d35e4c"/>
+    <managerType typeId="c5462890-90c2-4394-b446-0abe80c6a265" valueTypeId="446a574f-6056-433d-9e8e-f3ca8616288b"/>
+  </producedTypes>
+  <name>СверкаТаблицПоЗадачам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сверка таблиц по задачам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.СверкаТаблицПоЗадачам.Form.Форма</defaultForm>
+  <attributes uuid="b71e64df-ff54-4712-8399-8317d8d94461">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="3c265019-0e3d-4a77-ab8c-df7cfd92d04b">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="bc97f306-9de9-4518-973f-2f4c9f2ee4c3">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <templates uuid="eebfffb1-16d0-48a5-bb3c-5d27b38fc2c7">
+    <name>Акт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт</value>
+    </synonym>
+  </templates>
+  <templates uuid="695ad9df-2be7-4241-bc62-a990e0a84128">
+    <name>Счет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

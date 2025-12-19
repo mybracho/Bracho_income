@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0cae4fba-028a-4d23-aee4-1fa852732740">
+  <producedTypes>
+    <objectType typeId="30357acf-2b46-46f6-b7b6-2595e35a115b" valueTypeId="738e727d-68ab-4d5f-8517-83d4ae69cc77"/>
+    <managerType typeId="9a3947e8-c51e-42fc-b788-a4e565dbb948" valueTypeId="1f4b86fb-f16b-4304-b857-875eac6181b4"/>
+  </producedTypes>
+  <name>ДвиженияКрипто</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движения крипто</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДвиженияКрипто.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="1754c0d5-ea73-445f-831d-bb51364738df">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

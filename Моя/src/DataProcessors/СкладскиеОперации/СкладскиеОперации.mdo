@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="53370c29-2eda-4060-a2fa-31dcdd653511">
+  <producedTypes>
+    <objectType typeId="3e759f4d-587b-4ee2-bee8-acc1689bfffd" valueTypeId="280f43f0-c970-4254-ab8d-9ce8870eb347"/>
+    <managerType typeId="51649587-6aee-46f3-b5fe-0e9765c60926" valueTypeId="590d3ddd-db47-496c-a9f1-60ab109cfdca"/>
+  </producedTypes>
+  <name>СкладскиеОперации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Складские операции</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.СкладскиеОперации.Form.Форма</defaultForm>
+  <attributes uuid="90cfd718-40c5-43c7-ab13-aef640a8b2e6">
+    <name>ШК</name>
+    <synonym>
+      <key>ru</key>
+      <value>ШК</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="8d6e1139-11d0-46ee-89af-95585feb6b31">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="26fd8df5-c279-45b1-a951-519f3429a538">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

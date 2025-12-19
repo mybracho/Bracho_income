@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c171985f-fc8d-4a33-9803-306678d4e688">
+  <producedTypes>
+    <selectionType typeId="0862a484-3fa4-4c2e-9f1f-0afa3f6bda8e" valueTypeId="b219eb0e-184d-444c-854e-0bc1a684e1d6"/>
+    <listType typeId="079b56a4-5c05-4d89-a7b4-bcf19cfc5809" valueTypeId="e4bd4c4c-b079-429c-8953-48d8555278fe"/>
+    <managerType typeId="cbf3a002-fa2f-4d56-bb02-4b7dfbc5a6d5" valueTypeId="b41e3d90-f8ee-427f-964f-f6e01ed1c864"/>
+    <recordSetType typeId="7259c766-bafd-4bb8-bce2-c26d42bfb339" valueTypeId="2d0f364b-64a5-4e82-b23b-e278cba6c382"/>
+    <recordKeyType typeId="1d877b38-952a-4943-b011-27418922f91d" valueTypeId="b04f2b91-c240-40dd-a047-009431650873"/>
+    <recordType typeId="f15726d2-ee39-460f-a847-db7a21764896" valueTypeId="922285a2-68f5-4662-bfbb-b806f92ebe84"/>
+    <recordManagerType typeId="084afce7-16ab-4fbf-8280-8c8f1b12ba6c" valueTypeId="11ef83da-d367-461c-ab9b-d18f1e3f83ef"/>
+  </producedTypes>
+  <name>СтавкаЗаЧас</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ставка за час</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="56c8397d-1058-4238-8fe8-69442f7aeee7">
+    <name>Ставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="32e5db63-3a5a-426b-88e2-ee3a132d5ba5">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4420f32c-9bfa-434e-9189-8aea5fd0cf69">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <commands uuid="cf25c168-af2e-409e-89af-6c2eacce8b55">
+    <name>ЧасоваяСтавка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Часовая ставка</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Контрагенты</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:InformationRegister>

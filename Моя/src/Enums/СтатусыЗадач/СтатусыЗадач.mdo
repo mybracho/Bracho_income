@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6edee4f-17c8-4959-bf18-336f89a08ff1">
+  <producedTypes>
+    <refType typeId="637c423f-0e0f-4dcb-89e6-e1cc21c9783f" valueTypeId="c8b4e4fa-61fe-4c90-8f47-e8aee427e6bd"/>
+    <listType typeId="deaa604e-0ebf-4878-b225-3945d96d229d" valueTypeId="362571e5-4222-4049-90cb-c0f18f90c6e3"/>
+    <managerType typeId="8571e852-2961-4bf7-a968-5dbb6efe960e" valueTypeId="09fcd6ce-26b2-4fed-a5e0-62038d9ca854"/>
+  </producedTypes>
+  <name>СтатусыЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы задач</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="29135788-7bee-4086-bd63-4c331e0a4b3b">
+    <name>Открыта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Открыта</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8310adf9-3dec-40be-97e2-29ae7f8cd04b">
+    <name>Закрыта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закрыта</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

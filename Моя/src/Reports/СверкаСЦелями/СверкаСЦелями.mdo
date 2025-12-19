@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6ff1eae6-907c-4744-b0c2-ceb22314df88">
+  <producedTypes>
+    <objectType typeId="8be79adc-8cb0-4193-86eb-6e54d07e655c" valueTypeId="c1c88d3e-1145-4323-92a9-77083384cae5"/>
+    <managerType typeId="c635a5c8-f74c-4acc-ba4c-e151fb762a4c" valueTypeId="310dc5bd-0c9d-4f2b-89fb-5c6dd5c338b5"/>
+  </producedTypes>
+  <name>СверкаСЦелями</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сверка с целями</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СверкаСЦелями.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="35101857-f164-41fd-8e36-9b73d93fee04">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

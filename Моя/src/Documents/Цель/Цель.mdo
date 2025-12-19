@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2f08eae6-9b8b-4260-b3bc-dbb777486369">
+  <producedTypes>
+    <objectType typeId="3bc1fa65-9ff6-46e9-a03e-5867d4e8f9ed" valueTypeId="b5557e65-c615-4c6b-ab61-1ef10657b3ab"/>
+    <refType typeId="4f9bdb1a-0ff5-4d3a-a6c2-8189941d9652" valueTypeId="21307ba8-70fd-488f-9a02-acd2f3ee824f"/>
+    <selectionType typeId="b4f4e856-a236-4930-a93a-89bfa4a01645" valueTypeId="0280d4ca-4a09-490c-86aa-27cc9828bc81"/>
+    <listType typeId="7ed29834-dc18-4785-921b-a88e5a101433" valueTypeId="8d91a42f-22bc-4c05-82cf-0a132c9ba078"/>
+    <managerType typeId="f3c07784-6af3-416e-88e8-6b2a0c8d6188" valueTypeId="471e7443-6429-4b7e-bc8e-a5724e87765c"/>
+  </producedTypes>
+  <name>Цель</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цель</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Цель.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>AccumulationRegister.Цели</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="7a31a749-a019-42ee-8092-2eb11fb5efca">
+    <name>СуммаЭквивалент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма эквивалент</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>

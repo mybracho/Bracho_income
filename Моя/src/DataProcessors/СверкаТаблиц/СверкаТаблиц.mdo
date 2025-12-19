@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f624590a-cfd9-4980-92b8-efdab51568ec">
+  <producedTypes>
+    <objectType typeId="13ea9d66-0cb0-4849-8be8-15295ccc265f" valueTypeId="0c109909-af14-47b4-8d47-aa56a53cf528"/>
+    <managerType typeId="9406c5fd-1883-4512-8c63-fef665eb760e" valueTypeId="8772a45d-88d9-4db9-8b8b-99f5d3d84a87"/>
+  </producedTypes>
+  <name>СверкаТаблиц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сверка таблиц</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.СверкаТаблиц.Form.Форма</defaultForm>
+  <forms uuid="b3bdbbb1-82ab-4321-a76c-e9eeea929d3c">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

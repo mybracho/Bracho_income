@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f1971941-195c-4a7b-96ce-29bb4da6f564">
+  <producedTypes>
+    <refType typeId="f9e3eff2-76b1-4db1-b2d1-8eb14ab86e8d" valueTypeId="6bbf8ad5-e5c5-4751-90cf-ce87801ac599"/>
+    <listType typeId="6387e00c-8d3f-45ba-be8a-6300a073af48" valueTypeId="9b4f062d-7435-4412-b64b-1317b81d4b09"/>
+    <managerType typeId="5dc1a28b-5d32-4418-9a94-2a7a71c5f2b7" valueTypeId="c7c562fc-f00f-40d0-a238-3bd73bb58315"/>
+  </producedTypes>
+  <name>СтатусыСчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы счета</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="f8aab22e-a5b9-4db7-aa4d-797f06947434">
+    <name>ВРаботе</name>
+    <synonym>
+      <key>ru</key>
+      <value>В работе</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5b9a01fc-5807-4df9-bedf-6f7402ca40b9">
+    <name>ОжиданиеОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидание оплаты</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4b36763e-cbbe-463e-921f-c34d4a5ac95f">
+    <name>ВыставитьСчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выставить счет</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7e786752-2d58-401b-834e-a1aabc8754a2">
+    <name>Оплачен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оплачен</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

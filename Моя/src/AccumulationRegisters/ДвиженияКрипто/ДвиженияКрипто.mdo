@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="135bc3dd-e54b-43a4-994c-1ed3e9ca09ba">
+  <producedTypes>
+    <selectionType typeId="7c15cee8-fe6e-4dd7-b0fd-3ab280593fd5" valueTypeId="3c46fd21-2dfb-49a0-b7e1-16d43ebd6896"/>
+    <listType typeId="4dc02d2f-d66a-47b4-b13f-acb51ec93a8d" valueTypeId="403e3a69-18e0-45c5-9c50-e2cc01e5d108"/>
+    <managerType typeId="20a1043d-b2dd-472a-b5eb-09e8bf0ba300" valueTypeId="b8f7ab4c-cb67-4ff6-8747-b8aae24bcacb"/>
+    <recordSetType typeId="071ac38e-0312-499f-9bad-df0d7a89d258" valueTypeId="29de57c3-0155-4a8d-9af0-4b541c838877"/>
+    <recordKeyType typeId="1a6e64f9-61cf-494e-a275-5e985c37abaa" valueTypeId="9d868c09-729b-4c17-a161-2ab3e08eead0"/>
+    <recordType typeId="d8ac3ba9-8e95-48fb-9c79-a6dfacceb490" valueTypeId="18d259c2-f232-455d-8e07-f7d99a20623c"/>
+  </producedTypes>
+  <name>ДвиженияКрипто</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движения крипто</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="c3dcc70d-c13d-46e1-95cc-0c23392f3a4d">
+    <name>КоличествоКрипто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество крипто</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>19</precision>
+        <scale>10</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="4ad53dc3-2b87-42eb-bc1d-768fc90ae6e0">
+    <name>КоличествоВалюты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество валюты</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>19</precision>
+        <scale>10</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="9f2f54a5-8eab-41b6-99cd-0bf0c0f32b02">
+    <name>Криптовалюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Криптовалюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Криптовалюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="25bb7625-8627-4c5f-bb83-83776090eb07">
+    <name>ВалютаПокупки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта покупки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Криптовалюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

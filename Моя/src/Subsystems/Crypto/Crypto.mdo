@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="258fa188-b3d9-4c88-9a53-9de0cd5787bc">
+  <name>Crypto</name>
+  <synonym>
+    <key>ru</key>
+    <value>Crypto</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ПокупкаКрипто</content>
+  <content>AccumulationRegister.ДвиженияКрипто</content>
+  <content>Catalog.Криптовалюты</content>
+  <content>Report.ДвиженияКрипто</content>
+</mdclass:Subsystem>

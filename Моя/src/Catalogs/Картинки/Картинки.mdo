@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="65805d68-4b14-4ebd-8ce4-f45b93245206">
+  <producedTypes>
+    <objectType typeId="b88d338b-5b65-4d30-b4cc-8a432ccc9ea4" valueTypeId="4f5eb851-f43c-4135-8fd8-2aece4739aa7"/>
+    <refType typeId="7c1fd6a6-503e-4f68-b20b-5512627ea4e0" valueTypeId="2737548e-84c9-4ed8-ad9d-5e582ea886bd"/>
+    <selectionType typeId="b2e3b96d-bb9e-426e-80da-d9c4515d7175" valueTypeId="afff6639-bb09-4d2b-ac2a-ed6b4888be4c"/>
+    <listType typeId="e402c9c5-eab7-4347-acb2-642f28038664" valueTypeId="8c952c13-353d-4a34-9ed6-f032353255d7"/>
+    <managerType typeId="f1b5c0bf-d98e-4771-9ac7-a894a80dd04b" valueTypeId="94296f4d-35fe-4a15-87f5-960abd4a12f9"/>
+  </producedTypes>
+  <name>Картинки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Картинки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Картинки.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Картинки.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="2266df0e-29b1-4df8-a5d9-c1f23f95dff2">
+      <name>Факсимиле</name>
+      <description>Факсимиле</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Картинки.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="33188ee0-524d-4317-8866-c826457189e3">
+    <name>ДанныеКартинки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные картинки</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="78e5094b-0eb8-47db-8926-24a151305229">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

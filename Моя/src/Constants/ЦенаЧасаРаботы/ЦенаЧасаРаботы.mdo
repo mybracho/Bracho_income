@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="78be660d-1202-4163-9ecc-c307cd20791f">
+  <producedTypes>
+    <managerType typeId="03762d1a-0a92-4688-9284-5ca1e90e173a" valueTypeId="ad8777a8-e4e4-4d92-93d1-c4e7516fcda6"/>
+    <valueManagerType typeId="bebb33f0-b1d0-48d1-ac49-48d620629089" valueTypeId="ff06bd67-dee4-48a1-bef1-2b4d10771eb5"/>
+    <valueKeyType typeId="19139405-7038-4695-8d38-25c63a6475b9" valueTypeId="f2a567c2-2ed0-45f3-953a-52e13c455c47"/>
+  </producedTypes>
+  <name>ЦенаЧасаРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цена часа работы</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>15</precision>
+      <scale>2</scale>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

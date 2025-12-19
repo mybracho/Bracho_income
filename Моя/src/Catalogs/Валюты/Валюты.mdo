@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="41ea662c-3222-4ab7-806a-c2677d6d2b39">
+  <producedTypes>
+    <objectType typeId="60ea44cc-2c51-4af0-80fd-8187d28f296f" valueTypeId="453fd0e0-a94d-495f-ba29-145283a752e5"/>
+    <refType typeId="31da1cac-a74c-4684-9893-258e34068642" valueTypeId="85f6c394-a623-46eb-82a3-cd5cecc135b8"/>
+    <selectionType typeId="8e75fbd1-92c1-4936-917c-52ffd59c8167" valueTypeId="da536811-e8b2-4c6d-a327-7fb90968f778"/>
+    <listType typeId="c4d530f3-0f8d-46a6-8e63-580b7934112b" valueTypeId="07d1ff59-1716-49a3-acda-bb1c7a66ff06"/>
+    <managerType typeId="28ecdec8-259d-47ee-994f-ece57732b3c1" valueTypeId="63a66ee9-da36-4ade-a8a3-fe83c9031353"/>
+  </producedTypes>
+  <name>Валюты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Валюты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Валюты.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Валюты.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="4dea57a6-a794-48b2-8f11-50b8b955fbff">
+      <name>BYN</name>
+      <description>BYN</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="d3c888d3-27af-4c95-aff8-4b70f7b27ab1">
+      <name>EUR</name>
+      <description>EUR</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="61d06972-7744-480f-8b1b-ebeb6a500a48">
+      <name>RUB</name>
+      <description>RUB</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="22e9056d-62f8-40c8-9003-331276ca3af4">
+      <name>USD</name>
+      <description>USD</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

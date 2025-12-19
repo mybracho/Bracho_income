@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d1a2fcc7-bdd2-4f8c-9d31-36fe306685bf">
+  <name>МоиДела</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мои дела</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>DataProcessor.СкладскиеОперации</content>
+  <content>Document.Счет</content>
+  <content>DataProcessor.СверкаТаблицПоЗадачам</content>
+  <content>Constant.ЦенаЧасаРаботы</content>
+  <content>Catalog.Картинки</content>
+  <content>Catalog.Контрагенты</content>
+  <content>Catalog.Договора</content>
+  <content>Report.Доходы</content>
+  <content>AccumulationRegister.Доходы</content>
+  <content>Catalog.Задачи</content>
+  <content>Catalog.Валюты</content>
+  <content>Catalog.Организации</content>
+  <content>Catalog.БанковскиеСчета</content>
+  <content>Document.Цель</content>
+  <content>InformationRegister.КурсыВалют</content>
+  <content>AccumulationRegister.Цели</content>
+  <content>Report.СверкаСЦелями</content>
+</mdclass:Subsystem>

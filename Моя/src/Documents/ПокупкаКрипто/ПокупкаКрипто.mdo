@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="85dd64c4-de64-4560-bd1a-fc1a3c884e8e">
+  <producedTypes>
+    <objectType typeId="63d72e3b-2d03-4605-b931-88e33cec2a22" valueTypeId="c4528d54-392d-4216-b876-9951ecd91816"/>
+    <refType typeId="d4e43645-80c8-4ecc-b71f-dd42f0278e9f" valueTypeId="d8d82652-1562-4bd1-944f-a27549a8a4c1"/>
+    <selectionType typeId="551ae480-602a-4d3a-b65c-7856e766c7fc" valueTypeId="38ae11d8-d007-4607-a4f0-bd6005c85d7b"/>
+    <listType typeId="ab1e9b78-e142-4c54-b52b-03accf558aa7" valueTypeId="a451a3f4-31f9-4bb1-8954-c313fe56d66f"/>
+    <managerType typeId="f2b46778-59e3-47d4-89f5-aa7dab242084" valueTypeId="832640b2-6e14-4427-898b-9ee241a56a14"/>
+  </producedTypes>
+  <name>ПокупкаКрипто</name>
+  <synonym>
+    <key>ru</key>
+    <value>Покупка крипто</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПокупкаКрипто.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <dataHistory>Use</dataHistory>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПокупкаКрипто.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ПокупкаКрипто.Form.ФормаСписка</defaultListForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>AccumulationRegister.ДвиженияКрипто</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="fe241f98-4005-4434-93c3-2981d53e3932">
+    <name>Криптовалюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Криптовалюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Криптовалюты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Криптовалюта, которую купили</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9e86554c-cd69-4037-a7ec-178f78ba35e7">
+    <name>КоличествоКрипто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество крипто</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>19</precision>
+        <scale>10</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="097c256b-4116-4a17-9c0e-9f27850ac776">
+    <name>ВалютаПокупки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта покупки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Криптовалюты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Валюта, за которую купили крипто</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d2b37189-837f-48d5-b4c4-3d159157ecde">
+    <name>КоличествоВалюты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество валюты</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>19</precision>
+        <scale>10</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="dc918bd8-3740-449a-8035-f6d8d908dd0c">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="355ec873-03d0-4341-83d2-8906a3e8cb96">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

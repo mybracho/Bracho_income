@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Криптовалюта</dataPath>
+			<field>Криптовалюта</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоВалютыПриход</dataPath>
+			<field>КоличествоВалютыПриход</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВалютаПокупки</dataPath>
+			<field>ВалютаПокупки</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоВалютыРасход</dataPath>
+			<field>КоличествоВалютыРасход</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоКриптоНачальныйОстаток</dataPath>
+			<field>КоличествоКриптоНачальныйОстаток</field>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>КоличествоКрипто</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоВалютыНачальныйОстаток</dataPath>
+			<field>КоличествоВалютыНачальныйОстаток</field>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>КоличествоВалюты</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоКриптоПриход</dataPath>
+			<field>КоличествоКриптоПриход</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоКриптоРасход</dataPath>
+			<field>КоличествоКриптоРасход</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоКриптоКонечныйОстаток</dataPath>
+			<field>КоличествоКриптоКонечныйОстаток</field>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>КоличествоКрипто</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоВалютыКонечныйОстаток</dataPath>
+			<field>КоличествоВалютыКонечныйОстаток</field>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>КоличествоВалюты</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+    ДвиженияКриптоОстаткиИОбороты.Криптовалюта КАК Криптовалюта,
+    ДвиженияКриптоОстаткиИОбороты.ВалютаПокупки КАК ВалютаПокупки,
+    ДвиженияКриптоОстаткиИОбороты.КоличествоКриптоНачальныйОстаток КАК КоличествоКриптоНачальныйОстаток,
+    ДвиженияКриптоОстаткиИОбороты.КоличествоВалютыНачальныйОстаток КАК КоличествоВалютыНачальныйОстаток,
+    ДвиженияКриптоОстаткиИОбороты.КоличествоКриптоПриход КАК КоличествоКриптоПриход,
+    ДвиженияКриптоОстаткиИОбороты.КоличествоВалютыПриход КАК КоличествоВалютыПриход,
+    ДвиженияКриптоОстаткиИОбороты.КоличествоКриптоРасход КАК КоличествоКриптоРасход,
+    ДвиженияКриптоОстаткиИОбороты.КоличествоВалютыРасход КАК КоличествоВалютыРасход,
+    ДвиженияКриптоОстаткиИОбороты.КоличествоКриптоКонечныйОстаток КАК КоличествоКриптоКонечныйОстаток,
+    ДвиженияКриптоОстаткиИОбороты.КоличествоВалютыКонечныйОстаток КАК КоличествоВалютыКонечныйОстаток
+ИЗ
+    РегистрНакопления.ДвиженияКрипто.ОстаткиИОбороты(, , Регистратор, , ) КАК ДвиженияКриптоОстаткиИОбороты</query>
+	</dataSet>
+	<totalField>
+		<dataPath>КоличествоВалютыКонечныйОстаток</dataPath>
+		<expression>Сумма(КоличествоВалютыКонечныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоВалютыНачальныйОстаток</dataPath>
+		<expression>Сумма(КоличествоВалютыНачальныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоВалютыПриход</dataPath>
+		<expression>Сумма(КоличествоВалютыПриход)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоВалютыРасход</dataPath>
+		<expression>Сумма(КоличествоВалютыРасход)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоКриптоКонечныйОстаток</dataPath>
+		<expression>Сумма(КоличествоКриптоКонечныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоКриптоНачальныйОстаток</dataPath>
+		<expression>Сумма(КоличествоКриптоНачальныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоКриптоПриход</dataPath>
+		<expression>Сумма(КоличествоКриптоПриход)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоКриптоРасход</dataPath>
+		<expression>Сумма(КоличествоКриптоРасход)</expression>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Криптовалюта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВалютаПокупки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоКриптоПриход</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоВалютыПриход</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:row>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:row>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

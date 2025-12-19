@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="52811125-8ef8-4a11-9e4c-25c126e12be9">
+  <name>Конфигурация</name>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="702f0689-b9c3-42cc-adbb-a24a90963c37"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="0ddc29c6-68d6-4619-94ca-1fb40c087d5d"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="db13ca39-8dd5-4428-8ba9-58065b4391f8"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="e7c27a08-c1da-411f-97e5-73180878fc8d"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="3c42e962-981b-488a-ac2a-891cd02317be"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="5a9b44d8-e5bf-4cdd-94bc-3d7cf606c4e0"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="56e06c5a-1367-49fa-9738-82ece49e292a"/>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <usedMobileApplicationFunctionalities>
+    <functionality>
+      <use>true</use>
+    </functionality>
+    <functionality>
+      <functionality>OSBackup</functionality>
+      <use>true</use>
+    </functionality>
+  </usedMobileApplicationFunctionalities>
+  <clientApplicationWindowsOpenVariant>OpenDataInDialogs</clientApplicationWindowsOpenVariant>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
+  <modalityUseMode>DontUse</modalityUseMode>
+  <interfaceCompatibilityMode>Version8_5</interfaceCompatibilityMode>
+  <version85InterfaceMigrationMode>Use</version85InterfaceMigrationMode>
+  <compatibilityMode>8.5.1</compatibilityMode>
+  <languages uuid="4d5181a4-29dd-420a-aec7-a87b5aaba15c">
+    <name>Русский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Русский</value>
+    </synonym>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.МоиДела</subsystems>
+  <subsystems>Subsystem.Crypto</subsystems>
+  <subsystems>Subsystem.Инструменты</subsystems>
+  <roles>Role.Администратор</roles>
+  <commonModules>CommonModule.ОбщегоНазначения</commonModules>
+  <commonAttributes>CommonAttribute.КомментарийДокумента</commonAttributes>
+  <constants>Constant.ЦенаЧасаРаботы</constants>
+  <catalogs>Catalog.Картинки</catalogs>
+  <catalogs>Catalog.Контрагенты</catalogs>
+  <catalogs>Catalog.Договора</catalogs>
+  <catalogs>Catalog.Задачи</catalogs>
+  <catalogs>Catalog.Валюты</catalogs>
+  <catalogs>Catalog.Организации</catalogs>
+  <catalogs>Catalog.БанковскиеСчета</catalogs>
+  <catalogs>Catalog.Криптовалюты</catalogs>
+  <documents>Document.Счет</documents>
+  <documents>Document.ПокупкаКрипто</documents>
+  <documents>Document.Цель</documents>
+  <enums>Enum.СтатусыЗадач</enums>
+  <enums>Enum.СтатусыСчета</enums>
+  <reports>Report.Доходы</reports>
+  <reports>Report.ДвиженияКрипто</reports>
+  <reports>Report.СверкаСЦелями</reports>
+  <dataProcessors>DataProcessor.СкладскиеОперации</dataProcessors>
+  <dataProcessors>DataProcessor.СверкаТаблицПоЗадачам</dataProcessors>
+  <dataProcessors>DataProcessor.СверкаТаблиц</dataProcessors>
+  <informationRegisters>InformationRegister.СтавкаЗаЧас</informationRegisters>
+  <informationRegisters>InformationRegister.КурсыВалют</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.Доходы</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ДвиженияКрипто</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.Цели</accumulationRegisters>
+</mdclass:Configuration>

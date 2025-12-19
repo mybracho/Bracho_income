@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5c8b9c83-80f1-42e6-a3a1-e790ed40fd9f">
+  <producedTypes>
+    <selectionType typeId="7fa63156-8743-41a6-b8aa-56af4d3fb938" valueTypeId="fe52b1b9-8783-4646-85e9-0182d4b92ab9"/>
+    <listType typeId="e5b46490-f481-4cc1-95f0-1f2a545141cd" valueTypeId="b6a22876-f7bf-4306-a04d-afc28c088879"/>
+    <managerType typeId="2fef77d7-16ad-4336-9806-2894fb1f7772" valueTypeId="8ec84e63-ee03-459a-919a-01141bcc5fdc"/>
+    <recordSetType typeId="4c5c83da-9f82-4337-90c7-792b09248920" valueTypeId="19d962e0-1e0b-461a-a888-c4141f1e8c95"/>
+    <recordKeyType typeId="4280a799-5939-4caf-a683-1bc0859c49f1" valueTypeId="5da1dcd2-b801-4a52-af4e-3334e09bffa4"/>
+    <recordType typeId="c12dcba3-ef5c-4c3d-b26b-dbae36d7af7a" valueTypeId="3f23ae6b-b69f-4258-9b44-685c0b0cdf4a"/>
+  </producedTypes>
+  <name>Цели</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цели</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="dcca7d1e-166d-49aa-b9f9-c3e9281b9a49">
+    <name>СуммаЭквивалент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма эквивалент</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+</mdclass:AccumulationRegister>
