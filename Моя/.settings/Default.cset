@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "settings": {
+    "constructor-function-return-section": {
+      "enabled": false
+    }
+  }
+}

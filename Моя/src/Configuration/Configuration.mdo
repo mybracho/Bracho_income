@@ -41,6 +41,7 @@
   <subsystems>Subsystem.Инструменты</subsystems>
   <roles>Role.Администратор</roles>
   <commonModules>CommonModule.ОбщегоНазначения</commonModules>
+  <commonModules>CommonModule.ТелеграмAPI</commonModules>
   <commonAttributes>CommonAttribute.КомментарийДокумента</commonAttributes>
   <constants>Constant.ЦенаЧасаРаботы</constants>
   <catalogs>Catalog.Картинки</catalogs>
